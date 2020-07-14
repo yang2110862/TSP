@@ -1,0 +1,2 @@
+E:\projects\tabuSearch\Debug\tabuSearch.exe
+E:\projects\tabuSearch\Debug\tabuSearch.pdb
