@@ -2,15 +2,13 @@
 
 /*
  *更新禁忌表
+ *开始日期：2020/7/16
+ *更新内容：禁忌表由禁忌路径改为禁忌路径长度
  */
 
-void pushTabuList(int* localRoute) {
+void pushTabuList(int localLen) {
     for (int i = 0; i < tabuListLen - 1; ++i) {       //删除禁忌表中第一组编码
-        for (int j = 0; j < cityNum; ++j) {
-            tabuList[i][j] = tabuList[i + 1][j];
-        }
+        tabuList[i] = tabuList[i + 1];
     }
-    for (int i = 0; i < cityNum; ++i) {//在禁忌表中将localRoute插入
-        tabuList[tabuListLen - 1][i] = localRoute[i];
-    }
+    tabuList[tabuListLen - 1] = localLen;
 }

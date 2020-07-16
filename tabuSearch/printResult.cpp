@@ -7,17 +7,17 @@
 
 void printResult()
 {
-	fstream fout("TSP_AnswerOut.txt", ios::out);
+	fstream fout("answerOut.txt", ios::out);
 	fout << filename << " result:" << endl;
 	cout << "最佳路径长度： " << bestLen << endl;
 	fout << "最佳路径长度： " << bestLen << endl;
 	cout << "最佳路径：" << endl;
 	fout << "最佳路径：" << endl;
-	for (int i = 0; i < cityNum; i++) {
+	for (int i = 0; i < cityNum; i++) {          //存储时把第一座城市标记成0，输出时+1
 		cout << bestRoute[i] + 1 << "->";
 		fout << bestRoute[i] + 1 << "->";
 	}
-	cout << 1 << endl;
-	fout << 1 << endl;
+	cout << bestRoute[0] + 1 << endl;
+	fout << bestRoute[0] + 1 << endl;
 	fout.close();
 }

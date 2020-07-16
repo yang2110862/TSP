@@ -1,2 +1,4 @@
 E:\projects\tabuSearch\Debug\tabuSearch.exe
 E:\projects\tabuSearch\Debug\tabuSearch.pdb
+D:\TSP\tabuSearch\Debug\tabuSearch.exe
+D:\TSP\tabuSearch\Debug\tabuSearch.pdb

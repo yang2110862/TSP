@@ -1,15 +1,2 @@
-﻿  costFunction.cpp
-E:\projects\tabuSearch\costFunction.cpp(12,59): warning C4244: “+=”: 从“double”转换到“int”，可能丢失数据
-E:\projects\tabuSearch\costFunction.cpp(14,61): warning C4244: “+=”: 从“double”转换到“int”，可能丢失数据
-  findNeighbor.cpp
-  init.cpp
-E:\projects\tabuSearch\init.cpp(36,65): warning C4244: “=”: 从“double”转换到“int”，可能丢失数据
-  init_greedy.cpp
-  in_tabuList.cpp
-  printResult.cpp
-  pushTabuList.cpp
-  solve.cpp
-  tabuMain.cpp
-  glabalVar.cpp
-  正在生成代码...
-  tabuSearch.vcxproj -> E:\projects\tabuSearch\Debug\tabuSearch.exe
+﻿  findNeighbor.cpp
+  tabuSearch.vcxproj -> D:\TSP\tabuSearch\Debug\tabuSearch.exe

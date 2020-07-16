@@ -8,7 +8,6 @@
 void init_greedy()
 {
     int f[1111] = { 0 }; //标记已访问的城市,开足够大的数组
-
     int sum = 0;//记录路程长度
     int num = 0;//记录第i个点
     f[0] = 1;
