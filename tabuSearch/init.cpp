@@ -3,17 +3,18 @@
 /*
  *函数功能：将参数初始化
  *开始日期：2020/7/13
- *更新日期：2020/7/16
- *更新内容：加上对禁忌表的初始化
+ *更新日期：2020/7/17
+ *更新内容：增加俩参数，maxRandNum和bestValue
  */
 
 void init(int argc, char** argv)
 {
     filename = (argc >= 2) ? (string)argv[1] : "att48.txt";
     int textMode = (argc >= 3) ? atoi(argv[2]) : 0;   //判断读入文本的格式，若textMode == 0 则读入的是坐标点，若textMode == 1，读入的是距离矩阵
-    iterationNum = (argc >= 4) ? atoi(argv[3]) : 20000;
-    tabuListLen = (argc >= 6) ? atoi(argv[4]) : 20;
-
+    iterationNum = (argc >= 4) ? atoi(argv[3]) : 10000;
+    tabuListLen = (argc >= 5) ? atoi(argv[4]) : 20;
+    maxRandNum = (argc >= 6) ? atoi(argv[5]) : 10;
+    bestValue = (argc >= 7) ? atoi(argv[6]) : 10628;
     fstream fin(filename, ios::in); //打开文件
     if (!fin.is_open()) {
         cerr << "can not open the file " << filename << endl;

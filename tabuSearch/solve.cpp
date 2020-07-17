@@ -24,8 +24,9 @@ void solve() {
         }
         end = clock(); //for debug
         double runTime = (double)(end - beg) / CLOCKS_PER_SEC; //for debug
+        if(n1 % 10000 == 0)  cout << "iterationNum:" << n1 + 1 << "  localLen:" << localLen << "  bestLen : " << bestLen << "  runTime: " << runTime << " seconds" << endl;  //每1000次查看一下结果
         //cout << "iterationNum:" << n1 + 1 << "  localLen:" << localLen << "  bestLen : " << bestLen << "  runTime: " << runTime << " seconds" << endl;//just for debug
-        if (bestLen == 10628) {
+        if (bestLen == bestValue) { //48算例最优10628，532算例最优27686
             printResult();
             cout << "runTime: " << runTime << endl;
             cout << "iterationNum: " << n1 + 1;

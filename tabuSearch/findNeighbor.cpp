@@ -305,7 +305,7 @@ void findNeighbor(int* initRoute, int* localRoute)
     }
     else {
         record ans;
-        int ran = rand() % 11 + 1;  // n不能取0；
+        int ran = rand() % maxRandNum + 1;  // n不能取0；
         int n = ran;//避免陷入局部最优解，随机找倒数第n优解,暂时设置最多倒数第10优。
         while (!candidate.empty() && n) {
             --n;

@@ -14,8 +14,10 @@ using namespace std;
 
 extern string filename;    //文件名
 extern int iterationNum;   //迭代次数
-extern int tabuListLen;    //紧急表长
+extern int tabuListLen;    //禁忌表长
+extern int maxRandNum;	   //找次优解时最大随机数
 extern int cityNum;        //城市数量
+extern int bestValue;      //该算例下最优路径长度；
 
 extern int* tabuList;          //禁忌表
 extern int** distanceMatri;    //距离矩阵

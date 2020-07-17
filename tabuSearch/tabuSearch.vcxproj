@@ -154,6 +154,7 @@
     <ClInclude Include="tabu.h" />
   </ItemGroup>
   <ItemGroup>
+    <Text Include="att532.txt" />
     <Text Include="C:\Users\LENOVO\Desktop\tabuSearch\att48.txt" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
